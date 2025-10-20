@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tham Gia Lễ Hội</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <style>
+        /* CSS nội tuyến để giữ nguyên background */
+        body {
+            background-image: url('images/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container-full">
+            <h1>form dang ky</h1>
+            <p></p>
+        </div>
+        <div >
+            <div >
+
+                
+                <div class="category">
+                    <button class="my-button">
+                        <a href="http://127.0.0.1:3000/index.html?serverWindowId=06c57f2f-42a9-4199-9d4e-b6ce0b96082f" target="_blank">HOme</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section id="registration-form-section">
+            <div class="category registration-page-form">
+                <h2>FORM  THAM gia</h2>
+                
+                <form id="registration-form">
+                    <label for="reg-name">Họ và Tên:</label>
+                    <input type="text" id="reg-name" name="name" placeholder="Ví dụ: Người Sói" required>
+                    
+                    <label for="reg-email">Địa chỉ Email:</label>
+                    <input type="email" id="reg-email" name="email" placeholder="Ví dụ: nguoisoi@maquai.com" required>
+                    
+                    <label for="reg-phone">Số điện thoại:</label>
+                    <input type="tel" id="reg-phone" name="phone" placeholder="Ví dụ: 090xxxxxxx" required>
+
+                    <label for="reg-package">Gói tham gia:</label>
+                    <select id="reg-package" name="package" required>
+                        <option value="">-- Chọn gói --</option>
+                        <option value="basic">Gói Cơ Bản (Tham dự)</option>
+                        <option value="vip">Gói VIP (Bao gồm đồ uống & phòng chờ riêng)</option>
+                    </select>
+                    
+                    
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="reg-confirm" name="confirm" required>
+                        <label for="reg-confirm" class="inline-label">Tôi cam kết tuân thủ quy định lễ hội.</label>
+                    </div>
+
+                    <button type="submit" class="my-button submit-button">HOÀN TẤT ĐĂNG KÝ</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
